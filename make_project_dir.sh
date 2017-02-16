@@ -12,9 +12,11 @@ mkdir input
 mkdir output
 mkdir logs
 touch readme.txt
+echo -n "Please specify contact email: "
+read email
 echo "Project name: '$foldername'
 Property of Dimitri Wirjowerdojo
-dawirjowerdojo@gmail.com
+$email
 Stockholms Universitet - KB8024
 Folder created on $(date +%Y-%m-%d)" > readme.txt
 echo "Project folder '$foldername' has been created."
