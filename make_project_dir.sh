@@ -1,4 +1,4 @@
-# Make a directory with name $1 as the home folder for the project
+# Make a directory with a specified name  as the home folder for the project
 echo -n "Please specify the folder name: "
 read foldername
 echo "Creating a folder for project '$foldername'..."
