@@ -5,7 +5,6 @@ echo "Creating a folder for project '$foldername'..."
 mkdir $foldername
 cd $foldername
 mkdir Datasets
-mkdir Literature
 mkdir Results
 mkdir scripts
 mkdir bash
