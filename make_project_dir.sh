@@ -7,11 +7,11 @@ cd $foldername
 mkdir Datasets
 mkdir Literature
 mkdir Results
-mkdir ./scripts
-mkdir ./bash
-mkdir ./input
-mkdir ./output
-mkdir ./logs
+mkdir scripts
+mkdir bash
+mkdir input
+mkdir output
+mkdir logs
 touch readme.txt
 echo "Project name: '$foldername'
 Property of Dimitri Wirjowerdojo
