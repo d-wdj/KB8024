@@ -1,4 +1,4 @@
-# KB8024 - Stockholms Universitet
-# Dimitri Wirjowerdojo
-# MSc Molecular Techniques in Life Science
-# 2016/2018
+# KB8024/8025 - Stockholms Universitet
+MSc Molecular Techniques in Life Science
+2016/2018
+Dimitri Wirjowerdojo
