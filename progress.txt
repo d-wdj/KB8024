@@ -1,0 +1,6 @@
+GOALS:
+21.02 - Create prompt for sliding window size => break down seq. with overlapping accordingly.
+
+
+PROBLEMS/ISSUES:
+21.02 - How to not ignore the first and the last amino acid when the window with the feature?
