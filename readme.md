@@ -5,6 +5,8 @@ Dimitri Wirjowerdojo<br>
 
 # PREDICTOR Status
 GOALS:
-22.02 - Find out if zeroes are the best way to not ignore the first and last residues.
+* ~~21.02 - Create prompt for window size.~~ <br>
+* 22.02 - Find out if zeroes are the best way to not ignore the first and last residues.
 
 PROBLEMS/ISSUES:
+* ~~21.02 - How to not ignore the first and the last residue~~.
