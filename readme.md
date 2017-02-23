@@ -11,6 +11,7 @@ ACHIEVEMENTS:
   3. Train a SVM using single sequence information, using sklearn;
   4. Check different window sizes for the inputs; and
   6. Train a SVM using multiple sequence information.
+* 02.22 - Created prompt for window size.
 
 GOALS:
 * 02.23 - Run psi-blast remotely and retrieve the PSSM.
