@@ -8,8 +8,9 @@ ACHIEVEMENTS:
 * 02.23 - Managed to do task (ii-iv not necessarily in order):
   1. Extract the features from dataset;
   2. Create cross-validated sets;
-  3. Train a SVM using single sequence information, using sklearn; and
-  4. Check different window sizes for the inputs.
+  3. Train a SVM using single sequence information, using sklearn;
+  4. Check different window sizes for the inputs; and
+  6. Train a SVM using multiple sequence information.
 
 GOALS:
 * 02.23 - Run psi-blast remotely and retrieve the PSSM.
