@@ -3,7 +3,7 @@ MSc Molecular Techniques in Life Science <br>
 2016/2018 <br>
 Dimitri Wirjowerdojo<br>
 
-# PREDICTOR Status
+# Predictor Status
 ACHIEVEMENTS:
 * 02.23 - Managed to do task (ii-iv not necessarily in order):
   1. Extract the features from dataset;
