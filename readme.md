@@ -9,11 +9,11 @@ ACHIEVEMENTS:
 * 02.24 - Installed BLAST+ package to be run offline (though psi-blast doesn't take -remote flag!).
 * 02.24 - Split big script into extractor (+ cross-validation dataset splitting), SVM, PSSM-parser.
 * 02.23 - Managed to do task (ii-iv not necessarily in order):
-  ** Extract the features from dataset;
-  ** Create cross-validated sets;
-  ** Train a SVM using single sequence information, using sklearn;
-  ** Check different window sizes for the inputs; and
-  ** Train a SVM using multiple sequence information.
+  * Extract the features from dataset;
+  * Create cross-validated sets;
+  * Train a SVM using single sequence information, using sklearn;
+  * Check different window sizes for the inputs; and
+  * Train a SVM using multiple sequence information.
 * 02.22 - Created prompt for window size.
 
 GOALS:
