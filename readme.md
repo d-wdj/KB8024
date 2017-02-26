@@ -20,8 +20,8 @@ GOALS:
 * 02.25 - Improve psi-blast bash script by, skipping .fasta that has been processed. Also add echo $time to see that it is indeed still running.
 * ~~02.25 - Split the psi-blast dataset into 6 parts and run them in parallel, run time should be about 2 days.~~
 * ~~02.23 - Run psi-blast remotely and retrieve the PSSM.~~
-* ~~02.22 - Find out if zeroes are the best way to not ignore the first and last residues. ~~<br>
-* ~~02.21 - Create prompt for window size.~~ <br>
+* ~~02.22 - Find out if zeroes are the best way to not ignore the first and last residues.~~
+* ~~02.21 - Create prompt for window size.~~
 
 PROBLEMS/ISSUES:
 * ~~02.25 - Each protein takes about 36 minutes to be run with 3 iterations on psi-blast, meaning it will take about 9 days for 399 proteins.~~
