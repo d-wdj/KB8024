@@ -1,27 +1,33 @@
 from sklearn import preprocessing
+import numpy as np
+from sklearn import svm
+from sklearn.model_selection import cross_val_score
+from sklearn.utils import shuffle
 import os.path
+
 
 # SECTION 1: OPENING FILE AND APPENDING INTO LISTS
 ################################################################################
 ### Opens the file and appends each feature of the file into
 ### the appropriate lists.
 ################################################################################
-# promptfile = input("Please specify filename and format: ")
-# SEQUENCE = open(promptfile, 'r+')
-SEQUENCE = open('../Datasets/sample_60.txt', 'r+')
+promptfile = input("Please specify directory, name and format of the file: ")
+SEQUENCE = open(promptfile, 'r+')
+# SEQUENCE = open('../Datasets/sample_60.txt', 'r+')
 Sequence = SEQUENCE.read().splitlines()
 print ("Opening the files and appending data features into their lists...")
-protname = []
-proteinseq = []
-secondstruc = []
-countprot = 0
-for i in range(0, len(Sequence), 3):
-    protname.append(Sequence[i].lstrip('>'))
-for i in range(1, len(Sequence), 3):
-    proteinseq.append(Sequence[i])
-    countprot += 1
-for i in range(2, len(Sequence), 3):
-    secondstruc.append(Sequence[i])
+countprot = int(len(Sequence)/3)
+protname = [Sequence[i] for i in range(0, len(Sequence),3)]
+proteinseq = [Sequence[i] for i in range(1, len(Sequence),3)]
+secondstruc = [Sequence[i] for i in range(2, len(Sequence),3)]
+
+# for i in range(0, len(Sequence), 3):
+#     protname.append(Sequence[i].lstrip('>'))
+# for i in range(1, len(Sequence), 3):
+#     proteinseq.append(Sequence[i])
+#     countprot += 1
+# for i in range(2, len(Sequence), 3):
+#     secondstruc.append(Sequence[i])
 SEQUENCE.close()
 print ("Number of sequences: ",countprot)
 
@@ -35,18 +41,17 @@ while True:
         ws = int(ws)
         n = int(ws/2)
         break
-# with open(".windowsize", 'w+') as tempws:
-#     tempws.write(str(ws))
+# n = int(ws/2)
 
 # SECTION 3: MAKE DIRECTORY FOR SPECIFIED WINDOW SIZE
 ################################################################################
 ### Make directory for each window size
 ################################################################################
-newpath = '../Datasets/Window Size/'+str(ws)+'/'
-if not os.path.exists(newpath):
-    os.makedirs(newpath)
-    os.makedirs(newpath+'Train Set')
-    os.makedirs(newpath+'Test Set')
+# newpath = '../Datasets/Window Size/'+str(ws)+'/'
+# if not os.path.exists(newpath):
+#     os.makedirs(newpath)
+#     os.makedirs(newpath+'Train Set')
+#     os.makedirs(newpath+'Test Set')
 
 # SECTION 4: EXTRACT PROTEIN NAME AND PROTEIN SEQUENCE INTO A FASTA FILE
 ################################################################################
@@ -179,7 +184,7 @@ print ("Feature extraction finished.")
 enc = preprocessing.OneHotEncoder()
 mappedprotein_encoded = enc.fit_transform(mappedprotein).toarray()
 print ("Some examples for SKLearn inputs:")
-for i in range(0, 120, 8):
+for i in range(0, 120, 40):
     a = mappedprotein_encoded[i]
     b = structrip[i]
     print (a,b)
