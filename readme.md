@@ -17,7 +17,8 @@ ACHIEVEMENTS:
 * 02.22 - Created prompt for window size.
 
 GOALS:
-* 02.25 - Improve psi-blast bash script by, skipping .fasta that has been processed. Also add echo $time to see that it is indeed still running.
+* 02.26 - Modify code to split dataset for cross-validation on protein-level, rather than window-level.
+* 02.25 - Improve psi-blast bash script by, skipping .fasta that has been processed. ~~Also add echo $time to see that it is indeed still running.~~
 * ~~02.25 - Split the psi-blast dataset into 6 parts and run them in parallel, run time should be about 2 days.~~
 * ~~02.23 - Run psi-blast remotely and retrieve the PSSM.~~
 * ~~02.22 - Find out if zeroes are the best way to not ignore the first and last residues.~~
