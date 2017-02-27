@@ -3,6 +3,9 @@ MSc Molecular Techniques in Life Science <br>
 2016/2018 <br>
 Dimitri Wirjowerdojo<br>
 
+# Notice
+* For the task due on 2017.02.27, please check extractor.py
+
 # Predictor Status
 ACHIEVEMENTS:
 * 02.25 - Enabled multi-threading[8], so each protein takes only up to 5 minutes. Split list of proteins [total=399] into two and ran them separately, runtime should be around several hours, not days.
