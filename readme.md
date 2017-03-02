@@ -8,7 +8,10 @@ Dimitri Wirjowerdojo<br>
 
 # Predictor Status
 ACHIEVEMENTS:
-* For regular predictor (without evolutionary information/PSI-BLAST PSSM), most efficient (in terms of computing time and performance) is to use LinearSVC rather than SVC (with linear kernel). 
+* 03.02 - For regular predictor (without evolutionary information/PSI-BLAST PSSM), most efficient (in terms of computing time and performance) is to use LinearSVC rather than SVC (with linear kernel). 
+* 03.02 - Task recently done/are currently undertaken:
+  * (v) Add evolutionary information by running psi-blast and extracting the information (use either the subtitution matrix or the frequency matrix); and
+  * (vii) Optimisation of SVM performance.
 * 02.25 - Enabled multi-threading[8] for psi-blast, so each protein takes only up to 5 minutes. Split list of proteins [total=399] into two and ran them separately, runtime should be around several hours, not days.
 * 02.24 - Installed BLAST+ package to be run offline (though psi-blast doesn't take -remote flag!).
 * 02.24 - Split big script into extractor (+ cross-validation dataset splitting), SVM, PSSM-parser.
@@ -21,6 +24,7 @@ ACHIEVEMENTS:
 * 02.22 - Created prompt for window size.
 
 GOALS:
+* 03.02 - Complete optimisation by Sunday (2017.03.05) and modify the script such that it can take an input sequence(s).
 * 02.27 - Try to optimise everything by trying all possible parameter permutations. ~~Possibly do this on multiple threads to speed up process.~~ [Apparently python does not allow that].
 * ~~02.26 - Modify code to split dataset for cross-validation on protein-level, rather than window-level.~~
 * ~~02.25 - Improve psi-blast bash script by, skipping .fasta that has been processed. Also add echo $time to see that it is indeed still running.~~
