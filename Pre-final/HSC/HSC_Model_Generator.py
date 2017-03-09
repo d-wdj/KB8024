@@ -15,9 +15,9 @@ print ("The model is based on 399 proteins with DSSP assignments.\n")
 ### Opens the file and appends each feature of the file into
 ### the appropriate lists.
 ################################################################################
-# SEQUENCE = input("Please specify the directory and the name of the dataset for the model:\n")
-# SEQUENCE = open(SEQUENCE, 'r+')
-SEQUENCE = open('../../Datasets/dssp_3state.3line.txt', 'r+')
+SEQUENCE = input("Please specify the directory and the name of the dataset for the model:\n")
+SEQUENCE = open(SEQUENCE, 'r+')
+# SEQUENCE = open('../../Datasets/dssp_3state.3line.txt', 'r+')
 Sequence = SEQUENCE.read().splitlines()
 
 clf = RFC()
