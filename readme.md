@@ -4,7 +4,8 @@ MSc Molecular Techniques in Life Science <br>
 Dimitri Wirjowerdojo<br>
 
 # Notice
-* For the task due on 2017.02.27, please check extractor.py
+* For final assignment, please check folder "Final"
+* ~~For the task due on 2017.02.27, please check extractor.py~~
 
 # Predictor Status
 ACHIEVEMENTS:
