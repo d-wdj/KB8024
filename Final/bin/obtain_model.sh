@@ -1,4 +1,4 @@
-while [ ! -f bin/HSC.pkl ] ; do
+while [ ! -f HSC.pkl ] ; do
   echo "Single-sequence predictor model not found."
   read -p "[1]Download [2]Generate in-house: " yn
   case $yn in
@@ -8,7 +8,7 @@ while [ ! -f bin/HSC.pkl ] ; do
   esac
 done
 
-while [ ! -f bin/FM.pkl ] ; do
+while [ ! -f FM.pkl ] ; do
   echo "PSSM-Frequency Matrix-based predictor model not found."
   read -p "[1]Download [2]Generate in-house: " yn
   case $yn in
@@ -18,7 +18,7 @@ while [ ! -f bin/FM.pkl ] ; do
   esac
 done
 
-while [ ! -f bin/SM.pkl ] ; do
+while [ ! -f SM.pkl ] ; do
   echo "PSSM-Substitution Matrix-based predictor model not found."
   read -p "[1]Download [2]Generate in-house: " yn
   case $yn in
