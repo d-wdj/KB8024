@@ -108,7 +108,8 @@ while [ ! exitcheck == "False" ] ; do
   esac
 
 done
-
+echo "
+"
 read -p "Would you like to retain PSI-BLAST output files [y/n]? " psisave
 case $psisave in
   [Yy]* ) ;;

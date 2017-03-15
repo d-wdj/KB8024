@@ -156,4 +156,4 @@ with open((newpath+'SM_'+sys.argv[2]), 'w+') as op:
         op.write(str(pred[i])+'\n')
     op.write("Generated using HSCPred -- (C)2017 - Dimitri Wirjowerdojo ")
 
-print ("\nHSC Prediction finished. Have a good day!\n")
+print ("\nPSSM/SM Prediction finished. Have a good day!\n")
