@@ -3,7 +3,7 @@ MSc Molecular Techniques in Life Science <br>
 2016/2018 <br>
 Dimitri Wirjowerdojo<br>
 
-### •download everything within this folder•
+### •download everything within this folder or the compressed file•
 
 To run the predictor, you may execute the bash script 'HSCPred.sh'. However, it is still a bit wonky(*).
 Otherwise, assuming the model has been generated (python *_Model_Generator.py) or downloaded (bash obtain_model.sh), you can run the predictors (single-sequence-, PSSM-Frequency matrix- or PSSM-Substitution matrix-based : python *_Predictor.py) directly inside the folder bin.
