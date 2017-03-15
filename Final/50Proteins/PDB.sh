@@ -1,7 +1,14 @@
-mkdir Temp && cd Temp
-mkdir DSSP && mkdir Ent && mkdir Zip
-mkdir Fasta && cd Fasta
-mkdir Original && mkdir Proces && mkdir Psiblast && mkdir PSSM
+mkdir Temp
+cd Temp
+mkdir DSSP
+mkdir Ent
+mkdir Zip
+mkdir Fasta
+cd Fasta
+mkdir Original
+mkdir Proces
+mkdir Psiblast
+mkdir PSSM
 cd ../../
 
 cd bin
