@@ -74,6 +74,19 @@ echo "bin directory:" && cd bin && pwd && cd ..
 echo ""
 read -p "Path/to/file.format: " fasta
 
+echo "
+Please specify how you would like the output be named."
+read -p "Output Name: " outputname
+
+echo "
+"
+read -p "Would you like the prediction to be displayed on screen [y/n]? " yesno
+case $yesno in
+  [Yy]* ) yesno="Y" ;;
+  [Nn]* ) yesno="N" ;;
+* ) echo "Please input 'Y' or 'N'."
+esac
+
 while [ ! exitcheck == "False" ] ; do
   echo "Ready to predict!"
   read -p "
@@ -81,28 +94,15 @@ while [ ! exitcheck == "False" ] ; do
   [2] PSSM-Frequency matrix-based prediction
   [3] PSSM-Substitution matrix-based prediction
   [A] Run on all predictive methods
-
+  [Q] Exit
   Selection: " predict
-
-  echo "
-  Please specify how you would like the output be named."
-  read -p "Output Name: " outputname
-
-  echo "
-  "
-  read -p "Would you like the prediction to be displayed on screen [y/n]? " yesno
-  case $yesno in
-    [Yy]* ) yesno="Y" ;;
-    [Nn]* ) yesno="N" ;;
-  * ) echo "Please input 'Y' or 'N'."
-  esac
 
   cd bin
   case $predict in
-    [1]* ) python HSC_Predictor.py ${fasta} ${outputname} ${yesno} && cd .. ;;
+    [1]* ) pwd ; python HSC_Predictor.py ${fasta} ${outputname} ${yesno} && cd .. ; pwd ;;
     [2]* ) python FM_Predictor.py ${fasta} ${outputname} ${yesno} && cd .. ;;
     [3]* ) python SM_Predictor.py ${fasta} ${outputname} ${yesno} && cd .. ;;
-    [Aa]* ) echo "Running [1], [2] and [3] sequentially..." ; python HSC_Predictor.py ${fasta} ${outputname} ${yesno} && python FM_Predictor.py ${fasta} ${outputname} ${yesno} && python SM_Predictor.py ${fasta} ${outputname} ${yesno} && cd .. ;;
+    [Aa]* ) echo "Running [1], [2] and [3] sequentially..." && python HSC_Predictor.py ${fasta} ${outputname} ${yesno} && python FM_Predictor.py ${fasta} ${outputname} ${yesno} && python SM_Predictor.py ${fasta} ${outputname} ${yesno} && cd .. ;;
     [Qq]* ) exitcheck="False" ; cd .. ; break ;;
     * ) echo "Please input '1', '2', '3' or 'A'."
   esac
