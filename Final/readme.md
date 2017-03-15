@@ -16,7 +16,7 @@ Where:
 * arg2 : Is the name of the output file, which will be saved into a folder called 'Results', one directory above the folder 'bin'.
 * arg3 : either 'Y' or 'N', if 'Y' is input then the prediction will be printed onto the terminal.
 
-This predictor can handle multiple sequences in one fasta-format file as long as every sequence is not separated by any linebreak.
+This predictor can handle multiple sequences in one fasta-format file **as long as every sequence is not separated by any linebreak.**
 
 
 (*) Check readme.md file within /bin
