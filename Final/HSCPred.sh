@@ -102,7 +102,7 @@ while [ ! exitcheck == "False" ] ; do
     [1]* ) python HSC_Predictor.py ${fasta} ${outputname} ${yesno} && cd .. ;;
     [2]* ) python FM_Predictor.py ${fasta} ${outputname} ${yesno} && cd .. ;;
     [3]* ) python SM_Predictor.py ${fasta} ${outputname} ${yesno} && cd .. ;;
-    [Aa]* ) echo "Running [1], [2] and [3] sequentially..." ; cd bin && python HSC_Predictor.py ${fasta} ${outputname} ${yesno} && python FM_Predictor.py ${fasta} ${outputname} ${yesno} && python SM_Predictor.py ${fasta} ${outputname} ${yesno} && cd .. ;;
+    [Aa]* ) echo "Running [1], [2] and [3] sequentially..." ; python HSC_Predictor.py ${fasta} ${outputname} ${yesno} && python FM_Predictor.py ${fasta} ${outputname} ${yesno} && python SM_Predictor.py ${fasta} ${outputname} ${yesno} && cd .. ;;
     [Qq]* ) exitcheck="False" ; cd .. ; break ;;
     * ) echo "Please input '1', '2', '3' or 'A'."
   esac
