@@ -12,7 +12,7 @@ Each predictor python script takes three arguments:
 $ python *_Predictor.py arg1 arg2 arg3
 
 Where:
-* arg1 : Path to filename and fileformat of the test file.
+* arg1 : Path to filename and fileformat of the test file. Relative to where /bin/ is
 * arg2 : Is the name of the output file, which will be saved into a folder called 'Results', one directory above the folder 'bin'.
 * arg3 : either 'Y' or 'N', if 'Y' is input then the prediction will be printed onto the terminal.
 
