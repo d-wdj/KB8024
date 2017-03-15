@@ -99,7 +99,7 @@ while [ ! exitcheck == "False" ] ; do
 
   cd bin
   case $predict in
-    [1]* ) pwd ; python HSC_Predictor.py ${fasta} ${outputname} ${yesno} && cd .. ; pwd ;;
+    [1]* ) python HSC_Predictor.py ${fasta} ${outputname} ${yesno} && cd .. ;;
     [2]* ) python FM_Predictor.py ${fasta} ${outputname} ${yesno} && cd .. ;;
     [3]* ) python SM_Predictor.py ${fasta} ${outputname} ${yesno} && cd .. ;;
     [Aa]* ) echo "Running [1], [2] and [3] sequentially..." && python HSC_Predictor.py ${fasta} ${outputname} ${yesno} && python FM_Predictor.py ${fasta} ${outputname} ${yesno} && python SM_Predictor.py ${fasta} ${outputname} ${yesno} && cd .. ;;
