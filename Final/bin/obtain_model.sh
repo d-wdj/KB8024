@@ -2,7 +2,7 @@ while [ ! -f HSC.pkl ] ; do
   echo "Single-sequence predictor model not found."
   read -p "[1]Download [2]Generate in-house: " yn
   case $yn in
-    [1]* )  wget -O HSC.pkl "https://studki-my.sharepoint.com/personal/dimitri_wirjowerdojo_stud_ki_se/_layouts/15/guestaccess.aspx?docid=19b17f73483f84d0eb5f6aeee594f529d&authkey=AdDN3w20mDcqh3qSIKmzyO8" -q --show-progres ;;
+    [1]* )  wget -O HSC.pkl "https://studki-my.sharepoint.com/personal/dimitri_wirjowerdojo_stud_ki_se/_layouts/15/guestaccess.aspx?docid=19b17f73483f84d0eb5f6aeee594f529d&authkey=AdDN3w20mDcqh3qSIKmzyO8" -q --show-progress ;;
     [2]* ) cd bin ; python HSC_Model_Generator.py ; cd .. ;;
     * ) echo "Please input '1' to Download or '2' to generate locally." ;;
   esac
