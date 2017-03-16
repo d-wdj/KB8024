@@ -56,7 +56,7 @@ pad = [list(np.zeros(20))]
 ### Defining function for 'normalising' substitution matrix values
 ################################################################################
 def sigmoid(x):
-    return (1 / (1 + math.exp(-x)))
+    return (1 / (1 + (math.exp(-x))))
 
 ################################################################################
 ### Running psi-blast on input protein

@@ -44,7 +44,7 @@ function modelcheck {
       echo "PSSM-Substitution Matrix-based predictor model not found."
       read -p "[1]Download [2]Generate in-house: " yn
       case $yn in
-        [1]* ) wget -O bin/SM.pkl "https://studki-my.sharepoint.com/personal/dimitri_wirjowerdojo_stud_ki_se/_layouts/15/guestaccess.aspx?docid=05578af110f024b0b906aa699302ecfc5&authkey=AU3RFNSrP1axyfWKFSoCMxc" -q --show-progress ;;
+        [1]* ) wget -O bin/SM.pkl "https://studki-my.sharepoint.com/personal/dimitri_wirjowerdojo_stud_ki_se/_layouts/15/guestaccess.aspx?docid=04390ce8c450b48a5ab9df1e426186f46&authkey=AVxwcWHd-JUPrJtgd90xdPg" -q --show-progress ;;
         [2]* ) cd bin ; python SM_Model_Generator.py ; cd .. ;;
         * ) echo "Please input '1' to Download or '2' to generate locally." ;;
       esac

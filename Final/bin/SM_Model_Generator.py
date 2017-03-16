@@ -45,7 +45,7 @@ secondstruc = [randomised[i][2] for i in range(0, len(randomised))]
 ### Defining function for 'normalising' substitution matrix values
 ################################################################################
 def sigmoid(x):
-    return (1 / (1 + math.exp(-x)))
+    return (1 / (1 + (math.exp(-x))))
 
 ################################################################################
 ### Classifier
@@ -71,7 +71,7 @@ for i in range(0,len(protname)):
         substitutionmatrix = [] #2-22
         for everyline in pssm:
             pssm_split = everyline.split()
-            tmp_sm = pssm_split[22:42]
+            tmp_sm = pssm_split[2:22]
             tmp_sm2 = []
             for SM in tmp_sm:
                 tmp_sm2.append(sigmoid(int(SM)))
