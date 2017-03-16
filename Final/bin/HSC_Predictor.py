@@ -34,7 +34,7 @@ inv_ss_map = {1:'C', 2:'H', 3:'E'}
 pred = []
 ws = 11
 n = int(ws/2)
-enc = preprocessing.OneHotEncoder()
+enc = preprocessing.OneHotEncoder(n_values=21)
 countprot = 0
 total = len(i_proteinseq)
 

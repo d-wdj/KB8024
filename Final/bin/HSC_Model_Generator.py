@@ -70,7 +70,7 @@ structrip = [subelement for element in structrip for subelement in element]
 ################################################################################
 ### List of windows is encoded
 ################################################################################
-enc = preprocessing.OneHotEncoder()#n_values=20)
+enc = preprocessing.OneHotEncoder(n_values=21)
 mappedprotein_encoded = enc.fit_transform(protriplets).toarray()
 model = clf.fit(mappedprotein_encoded, structrip)
 joblib.dump(model, 'HSC.pkl')

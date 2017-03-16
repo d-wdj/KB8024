@@ -10,5 +10,5 @@ Due to large file size, the models have been uploaded somewhere else. To obtain,
 
 
 ## Notice
-* For reason(s) still unknown, 1/3 proteins of the dataset could not be predicted using HSC_Predictor.py. So far, the only pattern recognised is that their length was around 180-230 residues.
+* [FIXED] ~~For reason(s) still unknown, 1/3 proteins of the dataset could not be predicted using HSC_Predictor.py. So far, the only pattern recognised is that their length was around 180-230 residues.~~
 * If you would like to use PSI-BLAST dependent predictor, make sure that within the §_Predictor.py file the database path and name are set correctly.
